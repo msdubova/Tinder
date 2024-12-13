@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.random-user {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.random-user:hover {
+  transform: scale(1.05);
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Сделаем изображение обрезанным по кругу */
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+}
+
+.user-info img:hover {
+  transform: scale(1.1); /* При наведении изображение немного увеличивается */
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+button:focus {
+  outline: none;
+}
